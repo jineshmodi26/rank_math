@@ -1,0 +1,75 @@
+/* ResponsiveCard.css */
+.Third-ResponsiveCard {
+  /* background-color: re; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  */
+  /* padding: 16px; */
+  margin: 16px;
+  margin-top: 20px;
+  /* border-top: 1px solid #ccc; */
+
+  /* Use Flexbox to make the square divisions inline */
+  display: flex;
+  justify-content: space-evenly; /* Adjust this value to change the space between the squares */
+}
+
+.squareDivision1 {
+  border-radius: 15px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Adjust the color as needed */
+  border-radius: 8px;
+  padding-right : 40px;
+  padding-left : 42px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-right: 12px;
+}
+
+.squareDivision2 {
+  border-radius: 15px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white; /* Adjust the color as needed */
+  border-radius: 8px;
+  padding-right : 42px;
+  padding-left : 40px;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-left: 12px;
+}
+
+.btc-text{
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.buy-sell-image{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+/* Medium screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .squareDivision {
+    width: 180px;
+    height: 140px;
+  }
+  .Third-ResponsiveCard {
+    justify-content: space-around;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .squareDivision {
+    width: 200px;
+    height: 160px;
+  }
+  .Third-ResponsiveCard {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,21 @@
+.bottom-nav {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.icons-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.seleted-icon {
+    color : #4c5968;
+    margin: 15px;
+}
+
+.icons{
+    color : #aeb8c4;
+    margin: 15px;
+}

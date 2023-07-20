@@ -1,0 +1,126 @@
+/* ResponsiveCard.css */
+.First-ResponsiveCard {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1); /* Customize the shadow as desired */
+}
+
+h3 {
+  color: gray;
+}
+
+.crypto {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color : #4c5968;
+}
+
+.crypto-left {
+  display: flex;
+  align-items: center;
+}
+
+.crypto-right{
+  color : #aeb8c4
+}
+
+.price {
+  padding-left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  color: #4c5968;
+  font-size: 22px;
+  margin: 0;
+}
+
+.price-discount{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter', sans-serif;
+  color : #aeb8c4;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.usd {
+  margin : 0;
+  font-size: 14px;
+}
+
+.discount-div{
+  background-color: #ee225d;
+  border-radius: 20px;
+}
+
+.discount{
+  margin : 0;
+  font-size: 11px;
+  color : white;
+  padding : 10px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.arrow-button{
+  align-items: center;
+  color : #aeb8c4;
+  text-align: center;
+}
+
+.buttons-cotainers{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.buttons-buy{
+  background-color: dodgerblue;
+  padding: 10px;
+  border-radius: 10px;
+  color : white;
+  border: 0;
+}
+
+.buttons-sell{
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+  color : white;
+  border: 0;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .First-ResponsiveCard {
+    padding: 12px;
+    padding-right: 20px;
+    margin: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Medium screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .First-ResponsiveCard {
+    padding: 16px;
+    margin: 12px;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .First-ResponsiveCard {
+    padding: 24px;
+    margin: 16px;
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

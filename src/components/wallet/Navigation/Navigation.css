@@ -1,0 +1,134 @@
+/* Styling for the navigation bar */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the left side of the navigation bar */
+.nav-left {
+  margin-right: 10px;
+  padding-top: 5px;
+}
+
+/* Styling for the back button */
+.back-button {
+  padding: 5px 10px;
+  background-color: white;
+  color: gray;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.back-icon{
+  color : #aeb8c4;
+  font-size: 12px;
+}
+
+/* Styling for the middle of the navigation bar */
+
+/* Styling for the navigation heading */
+.nav-heading {
+  font-size: 24px;
+  margin: 0;
+  color: #4c5968;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+/* Styling for the right side of the navigation bar */
+.nav-right {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+}
+
+/* Styling for the dropdown */
+.dropdown {
+  position: relative;
+}
+
+/* Styling for the dropdown button */
+.dropbtn {
+  padding: 5px 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Styling for the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 700px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  right: 0;
+  border-radius: 15px;
+}
+
+/* Styling for the dropdown links */
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #dcdedc;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #797a79;
+  font-weight: 500;
+}
+
+.dropdown-content a:last-child{
+  border-bottom: 0;
+}
+
+/* Styling for the dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown content when the dropdown button is hovered */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.open-content{
+  display: flex;
+  justify-content: end;
+}
+
+.nav-link{
+  padding: 10px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .open-content {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .open-content {
+    display: none;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .dropbtn {
+    display: none;
+  }
+}

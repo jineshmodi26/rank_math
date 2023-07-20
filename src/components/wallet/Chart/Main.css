@@ -1,0 +1,79 @@
+/* ResponsiveCard.css */
+.Second-ResponsiveCard {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1); /* Customize the shadow as desired */
+
+  /* Add some padding and margin for spacing */
+  padding: 16px;
+  margin: 16px;
+  margin-top: 10px;
+  justify-content: space-around;
+  /* Add a small radius division line at the top */
+  /* border-top: 1px solid #ccc; */
+}
+
+.Chart {
+  height: 150px;
+  width: 300px;
+}
+
+.dropdown__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.dropdown-item {
+  display: inline;
+  color: #aeb8c4;
+  font-size: 12px;
+  padding : 5px;
+}
+
+.dropdown-item-active{
+  color : white;
+  background-color : #aeb8c4;
+  font-size : 12px;
+  padding : 5px;
+  border-radius : 20px;
+}
+
+/* Media Query for responsiveness */
+@media screen and (max-width: 768px) {
+  .dropdown__content p {
+    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .chart{
+    height: 150px;
+  }
+}
+
+/* Medium screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .Second-ResponsiveCard {
+    padding: 16px;
+    margin: 12px;
+  }
+  .dropdown__content p {
+    margin: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+/* Large screens (1025px and above) */
+@media screen and (min-width: 1025px) {
+  .Second-ResponsiveCard {
+    padding: 24px;
+    margin: 16px;
+  }
+  .dropdown__content p {
+    margin: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
