@@ -5,7 +5,7 @@
   box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.1); /* Customize the shadow as desired */
 
   /* Add some padding and margin for spacing */
-  padding: 16px;
+  /* padding: 16px; */
   margin: 16px;
   margin-top: 10px;
   justify-content: space-around;
@@ -40,6 +40,52 @@
   border-radius : 20px;
 }
 
+.x-axis{
+  display: none;
+}
+
+.y-axis{
+  display: none;
+}
+
+.range{
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  color: #aeb8c4;
+}
+
+.dot1{
+  width: 8px; /* Set the width and height to define the size of the dot */
+  height: 8px;
+  border-radius: 50%; /* Make the element circular */
+  background-color: #ef2755; /* Set the background color for the dot (use any valid color code) */
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.dot2{
+  width: 8px; /* Set the width and height to define the size of the dot */
+  height: 8px;
+  border-radius: 50%; /* Make the element circular */ /* Set the background color for the dot (use any valid color code) */
+  display: inline-block;
+  margin-right: 2px;
+  background-color: #1ec070;
+}
+
+.current-price{
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  color: #aeb8c4;
+}
+
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
   .dropdown__content p {
@@ -48,7 +94,7 @@
     margin-bottom: 0;
   }
   .chart{
-    height: 150px;
+    height: 160px;
   }
 }
 
@@ -75,5 +121,9 @@
     margin: 25px;
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .chart{
+    height: 130px;
+    width: 100%;
   }
 }

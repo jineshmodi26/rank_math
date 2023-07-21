@@ -105,20 +105,24 @@ const Chart = () => {
       </div>
       <div className="Second-ResponsiveCard">
         <div className="chart">
+          <div className="range">
+            <p className="range-price"><div className="dot1"></div>Lower: $4.895</p>
+            <p className="range-price"><div className="dot2"></div>Higher: $6.857</p>
+          </div>
           <ResponsiveContainer>
             <AreaChart
-              data={selected == 1 ? data.day : selected == 2 ? data.week : selected == 3 ? data.month : selected == 4 ? data.year : null}
+              data={selected == 1 ? data.day : selected == 2 ? data.week : selected == 3 ? data.month : selected == 4 ? data.year : data.day}
               margin={{
-                top: 0,
+                top: 30,
                 right: 0,
-                left: -30,
-                bottom: 0,
+                left: -60,
+                bottom: -30,
               }}
             >
-              <XAxis dataKey="name" style={{ fontSize: "10px" }} />
-              <YAxis style={{ fontSize: "10px", margin: 0 }} />
+              <XAxis dataKey="name" style={{ fontSize: "10px" }} className="x-axis"/>
+              <YAxis style={{ fontSize: "10px", margin: 0 }} className="y-axis"/>
               <Tooltip label="Hello" />
-              <Area type="monotone" dataKey="uv" stroke="#fa9716" fill="#fadfbb" />
+              <Area type="monotone" dataKey="uv" stroke="rgb(252,97,0)" fill="rgba(250,223,187,0.4)" />
             </AreaChart>
           </ResponsiveContainer>
         </div>

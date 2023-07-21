@@ -48,16 +48,8 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  
-}
-
 /* Medium screens (769px - 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .squareDivision {
-    width: 180px;
-    height: 140px;
-  }
   .Third-ResponsiveCard {
     justify-content: space-around;
   }
@@ -65,11 +57,18 @@
 
 /* Large screens (1025px and above) */
 @media screen and (min-width: 1025px) {
-  .squareDivision {
-    width: 200px;
-    height: 160px;
-  }
+  
   .Third-ResponsiveCard {
     justify-content: space-around;
+    margin-top: 10px;
   }
+
+  .buy-sell-image{
+    height: 30px;
+  }
+
+  .btc-text{
+    font-size: 10px;
+  }
+
 }

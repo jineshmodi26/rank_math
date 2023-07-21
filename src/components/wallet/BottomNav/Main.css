@@ -1,8 +1,9 @@
 .bottom-nav {
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: white;
+    margin: 0;
 }
 
 .icons-div{

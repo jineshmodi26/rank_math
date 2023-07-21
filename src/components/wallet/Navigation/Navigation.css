@@ -131,4 +131,7 @@
   .dropbtn {
     display: none;
   }
+  .navigation {
+    padding: 5px;
+  }
 }

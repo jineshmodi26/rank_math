@@ -7,7 +7,7 @@ const Button = ({src, text, className}) => {
   return <>
     <div className={className}>
       <div className="buy-sell-image">
-        <img src={src} height={40}/>
+        <img src={src} height={40} className="buy-sell-image"/>
       </div>
       <p className="btc-text">{text}</p>
     </div>
